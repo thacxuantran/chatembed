@@ -1,5 +1,5 @@
-import { BotMessageTheme, TextInputTheme, UserMessageTheme } from '@/features/bubble/types';
-type messageType = 'apiMessage' | 'userMessage' | 'usermessagewaiting';
+import { BotMessageTheme, TextInputTheme, UserMessageTheme } from "@/features/bubble/types";
+type messageType = "apiMessage" | "userMessage" | "usermessagewaiting";
 export type MessageType = {
     message: string;
     type: messageType;
@@ -16,6 +16,7 @@ export type BotProps = {
     poweredByTextColor?: string;
     badgeBackgroundColor?: string;
     fontSize?: number;
+    isShowPoweredByText?: boolean;
 };
 export declare const Bot: (props: BotProps & {
     class?: string;
